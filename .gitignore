@@ -1,0 +1,13 @@
+#test folder
+test/
+
+#data
+data/**/*.json
+data/**/*.md
+data/**/*.png
+#images/*/*.png
+
+#sensitive info
+config/*.php
+config/*.html
+config/*.txt

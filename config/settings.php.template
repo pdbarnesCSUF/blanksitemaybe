@@ -1,0 +1,69 @@
+<?php
+/**
+ *  @file settings.php.template
+ *  @brief Global settings file for stuff. Numbers should be used as little as possible in the site and use this instead to help with consistency and safety.
+ *  
+ */
+	$sitesettings['address'] 		= 'https://present.pt23.net/isds454';
+	$sitesettings['title'] 			= 'ID';
+	$sitesettings['title_full'] 	= 'ID System';
+	$sitesettings['debug']			= 0;	///<0 = off, 1 = debug, 2 = verbose
+	
+	//these are the default meta tags that a pages has incase a page
+	//does not fill them in.
+	//opengraph - http://ogp.me/
+	//twitter - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
+	//twitter title,description,image is copied from opengraph
+	$sitesettings['meta']['og:url']			= (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  //address in bar
+	$sitesettings['meta']['og:title']		= $sitesettings['title'];
+	$sitesettings['meta']['og:type']		= "website";
+	$sitesettings['meta']['og:description']	= "Identification system.";
+	$sitesettings['meta']['og:image']		= $sitesettings['address']."/images/id.png";
+	$sitesettings['meta']['twitter:card']			= "summary";
+	
+	//$sitesettings['maintenance']				= "the ID Frontend is down for maintenance!"; ///< if set, offline
+	$sitesettings['db_hostname'] = "localhost";
+	$sitesettings['db_database'] = "";
+	$sitesettings['db_username'] = "";
+	$sitesettings['db_password'] = "";
+
+  $sitesettings['rootuserid'] = 1; ///< system id for root user. don't change under normal circumstances
+  $sitesettings['ghostuserid'] = 2; ///< system id for ghost user. don't change under normal circumstances
+
+	$sitesettings['home_address']	=	"https://present.pt23.net/isds454"; ///< home address
+	$sitesettings['api_address']	=	"https://present.pt23.net/ajax";	///< web address to api
+	$sitesettings['images_address']	=	"https://present.pt23.net/isds454/images";	///< web address to static images
+
+	$sitesettings['email_enabled']		=	false;	///< enabled email features
+	$sitesettings['email_host']			=	"";		///< could be IP address. Where the SMTP server is
+	$sitesettings['email_port']			=	465;	///< Port for SMTP server
+	$sitesettings['email_smtpsecure']       =   false;  ///< false, tls, ssl(deprecated)
+	$sitesettings['email_auth']			=	true;	///< SMTP authentication (true or false)
+	$sitesettings['email_username']		=	"";		///< Username for SMTP authentication (if being used)
+	$sitesettings['email_password']		=	"";		///< Password for SMTP authentication (if being used)
+	//@todo ssl signed email https://github.com/PHPMailer/PHPMailer/blob/master/examples/smime_signed_mail.phps
+	$sitesettings['email_system_from']				=	"id@potato.com";	///< emailed from
+	$sitesettings['email_system_from_name']			=	"TMS";		///< emailed from name
+	$sitesettings['email_system_replyto']			=	"";			///< reply to email leave blank to omit
+	$sitesettings['email_system_replyto_name']		=	"";			///< reply to name
+	$sitesettings['email_system_subject_prefix']	=	"TMS:";			///< subj prefix
+  $sitesettings['email_system_subject_suffix']	=	"";			///< subj prefix
+  $sitesettings['email_system_verify_codeage']  = 7;      ///< email verification must be used before this time (DAYS)
+
+	$sitesettings['username_max_length'] 		=	25;			///<Username maximum length
+	$sitesettings['username_min_length'] 		=	4;			///<Username minimum length
+	$sitesettings['password_min_length'] 		=	5;			///<A minimum length of passwords
+	$sitesettings['account_status_max_length']	=	100;		///<account status as in "Banned", "Spam account", etc.
+	$sitesettings['session_expire_days']		=	30;			///<days for session to force expire
+	$sitesettings['profile_name_max_length'] 	=	40;			//
+	$sitesettings['profile_location_max_length']=	40;			//
+	$sitesettings['profile_pic_max_w']				=	512;		///<width of prof_pic
+	$sitesettings['profile_pic_max_h']				=	512;		///<height of prof_pic
+	$sitesettings['profile_pic_max_s']				=	51200;		///<file size - bytes (@todo not yet checked)
+	$sitesettings['profile_pic_location']			=	"https://present.pt23.net/isds454/data/user_images"; ///< web location
+	$sitesettings['gitcommitlinkbase'] = "https://github.com/pdbarnesCSUF/isds309_pracFinal/commit/";
+	$sitesettings['gitbranchlinkbase'] = "https://github.com/pdbarnesCSUF/isds309_pracFinal/tree/";
+	$sitesettings['cookiesite']					= "present.pt23.net";
+	$sitesettings['debug']	= 0;	///<0 = off, 1 = debug, 2 = verbose
+	//$sitesettings['maintenance']				= "the ID system is down for maintenance!"; ///< if set, offline
+?>

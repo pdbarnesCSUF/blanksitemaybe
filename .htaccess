@@ -1,0 +1,6 @@
+RedirectMatch 404 /.git
+RedirectMatch 404 /include
+RedirectMatch 404 /template_page.php
+RedirectMatch 404 /ajax/template_ajax.php
+#RedirectMatch 404 /util
+RedirectMatch 404 /config

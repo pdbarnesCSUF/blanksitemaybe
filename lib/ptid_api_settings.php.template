@@ -1,0 +1,10 @@
+<?php
+/**
+ *  @file id_api_settings.php
+ *  @brief ID api - settings
+ */
+$idapisettings['id_path'] = '\somewhere\id.php';
+$idapisettings['siteid'] = 0;
+$idapisettings['token'] = 0;
+
+?>

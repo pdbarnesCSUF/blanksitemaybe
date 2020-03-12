@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+#id_box {
+	background-color: #FFFFAA;
+	width: 200px; /*TODO remove - make alternate "fixed_boxsize", this should float*/
+	height:75px;  /*TODO remove - make alternate "fixed_boxsize", this should float*/
+	color: #000000;
+	float:inherit;
+	font-family: verdana;
+	font-size: .75em;
+	vertical-align:middle;
+	position: relative;
+}
+#id_box #maintenance
+{
+	float:center;
+	vertical-align:middle;
+}
+#id_box #box_left{
+	width:  35%;
+	height: 100%;
+	float:  left;
+	position: relative;
+}
+#id_box .id_profpic {
+	position:relative;
+	margin: auto;
+	width: 100%;
+	/*height : auto;*/
+	object-fit: contain;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+#id_box #box_right{
+	width:  65%;
+	height: 100%;
+	float:right;
+}
+	
+#id_box #username{
+	width:95%;
+}
+#id_box #password{
+	width:95%;
+}
+#id_box #loginrow{
+	font-size:.75em;
+	height:20px;
+}
+#idbox_bs3nav_profpic{
+	max-height: 50px;
+	max-width: 50px;
+}
+#idbox_bs3nav_proflink{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#idbox_bs3nav_btnshowmodallogin{
+	color: black;
+}
+#idbox_bs3nav_btnlogout{
+	color: black;
+}
+/*
+ * https://www.w3schools.com/howto/howto_css_modals.asp
+ */
+
+.id_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.id_modal_content {
+	background-color: #fefefe;
+	position: relative;
+    margin: 15% auto auto auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1024px;
+}
+.id_message {
+	display: none;
+	transition: .2s;
+	background-color: #EE8;
+}
+.id_button {
+	border: 1px #AAA solid;
+	text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #DDD;
+    border-radius: 4px;
+    padding: 5px;
+    transition: .2s;
+}
+.id_button:hover,
+.id_button:focus {
+    background-color: #CCC;
+}
+/* The Close Button */
+.id_close {
+    color: #aaa;
+    border: none;
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+}
+.id_close:hover,
+.id_close:focus {
+    color: black;
+}
+
+
+/* container and container.img-responsive stuff is experimental */
+ 
+.container .img-responsive {
+	 display: block;
+	 width: auto;
+	 height: 100px;
+	 max-height: 100%;
+ }
+

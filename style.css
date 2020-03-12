@@ -1,0 +1,158 @@
+@charset "utf-8";
+.ajax_response
+{
+	display: inline-block;
+}
+a {
+	color: #0f3581;
+}
+a:focus, a:hover {
+	color: #001c54;
+}
+body {
+	padding-top:45px;
+	background-color: #242E45;
+}
+h1,h2,h3
+{
+	text-align: center;
+}
+pre {
+	white-space: pre-wrap;
+}
+#main:before {
+	height: 50px;
+}
+#main {
+	background-color: #242E45;	
+	color: white;
+}
+.well {
+	background-color: #95A2C3;
+	color: black;
+}
+.panel {
+	color: black;
+}
+.start-hidden {
+	display: none;
+}
+.start-invisible {
+	visibility: hidden;
+}
+.logpre {
+	display: block;
+	font-family: monospace;
+	white-space: pre-wrap;
+	margin: 1em 0;
+}
+.id_profpic {
+	max-height: 256px;
+	width: auto;
+}
+#navbar_login_profpic{
+	max-height: 50px;
+	max-width: 50px;
+}
+#navbar_login_proflink{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#navbar_login_btnshowmodallogin{
+	color: black;
+}
+#navbar_login_btnlogout{
+	color: black;
+}
+/* bootstrap override */
+.modal-content {
+	padding: 10px; /* from 20px */
+}
+.id_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/*
+#id_modal_login_content {
+	background-color: #fefefe;
+	color: black;
+	position: relative;
+    margin: 15% auto auto auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1024px;
+}
+*/
+.id_modal_message {
+	background-color: #EE8;
+}
+/*
+.id_modal_button {
+	border: 1px #AAA solid;
+	text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #DDD;
+    color: black;
+    border-radius: 4px;
+    padding: 5px;
+    transition: .2s;
+}
+.id_modal_button:hover,
+.id_modal_button:focus {
+    background-color: #CCC;
+}
+.id_modal_close {
+    color: #aaa;
+    border: none;
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+}
+.id_modal_close:hover,
+.id_modal_close:focus {
+    color: black;
+}
+*/
+#copy {
+	color: #666666;
+	font-size: 12px;
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+}
+#copy a {
+	color: grey;
+}
+.table-hover > tbody > tr:hover{
+	background-color: #a8c7e6
+}
+@media screen and (min-width: 768px){
+	ul.nav {
+		border-top: none;
+	}
+	
+}
+.glyphicon.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg); }
+    to { transform: scale(1) rotate(360deg); }
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}

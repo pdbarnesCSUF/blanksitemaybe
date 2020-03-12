@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /
+Disallow: /test/
+Disallow: /.git/
+Disallow: /include/
+Disallow: /install/
+Disallow: /lib/
+Disallow: /vendor/
+Disallow: /admin/
+Disallow: /ajax/
+Disallow: /api
+Disallow: /config/
+Disallow: /data/
+Disallow: /doc/
+Disallow: /util/
